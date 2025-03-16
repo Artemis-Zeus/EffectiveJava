@@ -10,25 +10,24 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.994
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         
-      - name: Setup Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'corretto'
-          java-version: '17'
-          
-      - name: Build Writerside docs
-        uses: JetBrains/writerside-github-action@v4
-        with:
-          instance: in
-          artifact: webHelpXML2-all.zip
+      - name: Build docs
+        run: |
+          writerside build
+          zip -r webHelpXML2-all.zip artifacts/webHelpXML2-all
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -36,16 +35,14 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'artifacts/webHelpXML2-all.zip'
+          path: webHelpXML2-all.zip
           
   deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      
+    runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
