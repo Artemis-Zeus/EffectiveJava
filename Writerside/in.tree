@@ -4,8 +4,9 @@
 
 <instance-profile id="in"
                  name="Effective Java"
-                 start-page="使用静态工厂方法代替构造器.md">
+                 start-page="Welcome.md">
 
+    <toc-element topic="Welcome.md"/>
     <toc-element topic="使用静态工厂方法代替构造器.md"/>
     <toc-element topic="当构造器参数较多时考虑使用生成器.md"/>
 </instance-profile>
