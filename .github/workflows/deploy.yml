@@ -12,7 +12,7 @@ permissions:
 
 env:
   INSTANCE: 'Writerside/in'
-  DOCKER_VERSION: '2.1.994'
+  DOCKER_VERSION: 'latest'
   # IS_GROUP: 'true'  # Uncomment to build a group
   ALGOLIA_APP_NAME: 'NLAGB2LZHU'
   ALGOLIA_INDEX_NAME: 'MY_INDEX'
@@ -55,7 +55,7 @@ jobs:
         uses: JetBrains/writerside-github-action@v4
         with:
           instance: ${{ env.INSTANCE }}
-          docker-version: ${{ env.DOCKER_VERSION }}
+          docker-version: 'latest'
 
       - name: Save artifact with build results
         uses: actions/upload-artifact@v4
