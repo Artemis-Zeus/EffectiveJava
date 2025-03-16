@@ -25,7 +25,7 @@ jobs:
       - name: Build Writerside docs
         uses: JetBrains/writerside-github-action@v4
         with:
-          instance: hi/help
+          instance: in
           artifact: webHelpXML2-all.zip
           
       - name: Setup Pages
