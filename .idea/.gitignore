@@ -1,3 +1,8 @@
 # Default ignored files
-/shelf/
-/workspace.xml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+artifacts/
+*.iws
+.DS_Store

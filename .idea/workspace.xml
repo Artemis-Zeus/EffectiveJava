@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="16c05c13-aaec-4abf-a993-d577a7cddba0" name="Changes" comment="初始化服务" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="InstanceColorv3">
+    <option name="map">
+      <map>
+        <entry key="$PROJECT_DIR$/Writerside/in.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="1" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="60" />
+                  <option name="darkBlue" value="60" />
+                  <option name="darkGreen" value="68" />
+                  <option name="darkRed" value="206" />
+                  <option name="green" value="68" />
+                  <option name="red" value="206" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="65" />
+                  <option name="darkBlue" value="65" />
+                  <option name="darkGreen" value="126" />
+                  <option name="darkRed" value="231" />
+                  <option name="green" value="126" />
+                  <option name="red" value="231" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2uLaioHPEmJrJgtAMXhAKQ9lYaW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/12092/WritersideProjects/EffectiveJava",
+    "settings.editor.selected.configurable": "http.proxy",
+    "writerside.last.selected.productEffectiveJava": "in"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化服务" />
+  </component>
+</project>
