@@ -1,4 +1,4 @@
-name: Deploy Writerside to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -31,10 +31,10 @@ jobs:
           artifact: webHelpXML2-all.zip
           
       - name: Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v4
         
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: 'artifacts/webHelpXML2-all.zip'
           
@@ -49,4 +49,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1 
+        uses: actions/deploy-pages@v4 
