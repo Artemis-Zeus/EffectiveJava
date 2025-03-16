@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="in"
+                 name="Effective Java"
+                 start-page="使用静态工厂方法代替构造器.md">
+
+    <toc-element topic="使用静态工厂方法代替构造器.md"/>
+    <toc-element topic="当构造器参数较多时考虑使用生成器.md"/>
+</instance-profile>

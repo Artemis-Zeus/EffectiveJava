@@ -1,0 +1,16 @@
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <variables>
+        <primary-color>ruby</primary-color>
+        <header-logo>logo.png</header-logo>
+        <product-web-url>https://your-username.github.io/effective-java-notes/</product-web-url>
+        <download-title>Get Effective Java Notes</download-title>
+        <download-page>https://github.com/your-username/effective-java-notes</download-page>
+        <showDownloadButton>true</showDownloadButton>
+    </variables>
+    <build-profile instance="effective-java-notes">
+        <variables>
+            <noindex-content>false</noindex-content>
+        </variables>
+    </build-profile>
+</buildprofiles> 
