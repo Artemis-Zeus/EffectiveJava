@@ -7,6 +7,15 @@
                  start-page="Welcome.md">
 
     <toc-element topic="Welcome.md"/>
-    <toc-element topic="使用静态工厂方法代替构造器.md"/>
-    <toc-element topic="当构造器参数较多时考虑使用生成器.md"/>
+    <toc-element topic="第一章 创建和销毁对象.md">
+        <toc-element topic="使用静态工厂方法代替构造器.md"/>
+        <toc-element topic="当构造器参数较多时考虑使用生成器.md"/>
+        <toc-element topic="利用私有构造器或枚举类型强化Singleton属性.md"/>
+        <toc-element topic="利用私有构造器防止类被实例化.md"/>
+        <toc-element topic="优先考虑通过依赖注入来连接资源.md"/>
+        <toc-element topic="避免创建不必要的对象.md"/>
+        <toc-element topic="清除过期的对象引用.md"/>
+        <toc-element topic="避免使用总结方法和清理方法.md"/>
+        <toc-element topic="与try-finally相比，首选try-with-resources.md"/>
+    </toc-element>
 </instance-profile>
