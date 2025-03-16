@@ -1,0 +1,5 @@
+# Default ignored files
+artifacts/
+*.iws
+.DS_Store
+.idea/

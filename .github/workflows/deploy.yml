@@ -17,17 +17,16 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.994
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         
-      - name: Build docs
-        run: |
-          writerside build
-          zip -r webHelpXML2-all.zip artifacts/webHelpXML2-all
+      - name: Build Writerside docs
+        uses: JetBrains/writerside-github-action@v4
+        with:
+          instance: in
+          artifact: webHelpXML2-all.zip
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -35,7 +34,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: webHelpXML2-all.zip
+          path: artifacts/webHelpXML2-all.zip
           
   deploy:
     environment:
