@@ -7,7 +7,7 @@
                  start-page="Welcome.md">
 
     <toc-element topic="Welcome.md"/>
-    <toc-element topic="第一章 创建和销毁对象.md" id="chapter1-creating-destroying-objects">
+    <toc-element topic="第一章-创建和销毁对象.md">
         <toc-element topic="使用静态工厂方法代替构造器.md"/>
         <toc-element topic="当构造器参数较多时考虑使用生成器.md"/>
         <toc-element topic="利用私有构造器或枚举类型强化Singleton属性.md"/>
