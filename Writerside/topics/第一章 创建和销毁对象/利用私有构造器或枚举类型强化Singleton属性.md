@@ -1,12 +1,12 @@
-# 条目3：利用私有构造器或枚举类型强化Singleton属性
+# 利用私有构造器或枚举类型强化Singleton属性
 
-## 核心原则
+## 第一部分
 
 **单例模式(Singleton)**是一种确保类只有一个实例，并提供全局访问点的设计模式。在Java中，通过私有构造器和枚举类型可以有效地实现和强化单例属性，防止多实例创建，同时保证线程安全和序列化安全。
 
 ## 示例代码
 
-### 1. 传统单例实现方式（不推荐）
+### 1. 传统单例实现方式（不推荐） {id="1_1"}
 
 ```java
 public class BadSingleton {
@@ -30,7 +30,7 @@ BadSingleton singleton = BadSingleton.getInstance();
 BadSingleton anotherInstance = new BadSingleton(); // 单例被破坏!
 ```
 
-### 2. 使用私有构造器实现单例（基本方法）
+### 2. 使用私有构造器实现单例（基本方法） {id="2_1"}
 
 ```java
 public class Singleton {
@@ -58,7 +58,7 @@ public class Singleton {
 }
 ```
 
-### 3. 懒加载单例（延迟初始化）
+### 3. 懒加载单例（延迟初始化） {id="3_1"}
 
 ```java
 public class LazySingleton {
@@ -86,7 +86,7 @@ public class LazySingleton {
 }
 ```
 
-### 4. 静态内部类实现单例（推荐）
+### 4. 静态内部类实现单例（推荐） {id="4_1"}
 
 ```java
 public class StaticHolderSingleton {
@@ -106,7 +106,7 @@ public class StaticHolderSingleton {
 }
 ```
 
-### 5. 枚举类型实现单例（最佳方式）
+### 5. 枚举类型实现单例（最佳方式） {id="5_1"}
 
 ```java
 public enum EnumSingleton {
@@ -195,7 +195,7 @@ public class SerializableSingleton implements Serializable {
 
 ## 使用场景
 
-### 1. 资源管理器
+### 1. 资源管理器 {id="1_2"}
 
 ```java
 public enum DatabaseManager {
@@ -240,7 +240,7 @@ public enum DatabaseManager {
 DatabaseManager.INSTANCE.executeQuery("SELECT * FROM users");
 ```
 
-### 2. 配置管理器
+### 2. 配置管理器 {id="2_2"}
 
 ```java
 public enum ConfigManager {
@@ -279,7 +279,7 @@ public enum ConfigManager {
 String dbUrl = ConfigManager.INSTANCE.getProperty("database.url");
 ```
 
-### 3. 线程池管理器
+### 3. 线程池管理器 {id="3_2"}
 
 ```java
 public enum ThreadPoolManager {
@@ -322,7 +322,7 @@ ThreadPoolManager.INSTANCE.execute(() -> {
 
 ## 最佳实践样例
 
-### 1. 日志管理器（枚举单例）
+### 1. 日志管理器（枚举单例） {id="1_3"}
 
 ```java
 public enum LoggerManager {
@@ -403,7 +403,7 @@ logger.debug("Debug information");
 LoggerManager.INSTANCE.setDefaultLogLevel(LoggerManager.LogLevel.DEBUG);
 ```
 
-### 2. 应用上下文（静态内部类单例）
+### 2. 应用上下文（静态内部类单例） {id="2_3"}
 
 ```java
 public class ApplicationContext {
@@ -457,7 +457,7 @@ context.registerBean("userService", new UserService());
 UserService service = context.getBean("userService");
 ```
 
-### 3. 缓存管理器（双重检查锁定懒加载单例）
+### 3. 缓存管理器（双重检查锁定懒加载单例） {id="3_3"}
 
 ```java
 public class CacheManager {
@@ -581,7 +581,7 @@ User user = cache.get("user:123");
 
 ## 练习题
 
-### 练习1：实现线程安全的单例模式
+### 练习1：实现线程安全的单例模式 {id="1_4"}
 实现一个表示应用程序配置的单例类，要求：
 1. 线程安全
 2. 懒加载
@@ -634,7 +634,7 @@ public class AppConfig implements Serializable {
 }
 ```
 
-### 练习2：使用枚举实现功能完整的单例
+### 练习2：使用枚举实现功能完整的单例 {id="2_4"}
 
 实现一个使用枚举的单例模式，管理应用程序的主题设置。
 
