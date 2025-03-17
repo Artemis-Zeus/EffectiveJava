@@ -18,4 +18,13 @@
         <toc-element topic="避免使用总结方法和清理方法.md"/>
         <toc-element topic="与try-finally相比，首选try-with-resources.md"/>
     </toc-element>
+    <toc-element topic="第二章-对所有对象都通用的方法.md">
+        <toc-element topic="覆盖equals时请遵守通用约定.md"/>
+        <toc-element topic="重写equals方法时总是重写hashCode方法.md"/>
+        <toc-element topic="总是重写toString方法.md"/>
+        <toc-element topic="考虑实现Comparable接口.md"/>
+        <toc-element topic="谨慎重写clone方法.md"/>
+    </toc-element>
+
+
 </instance-profile>
